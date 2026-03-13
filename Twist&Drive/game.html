@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Twist & Drive - Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HUD -->
+<div id="hud">Time: <span id="time">0.00</span>s | Score: <span id="score">0</span></div>
+
+<!-- Controls Panel -->
+<div id="controls">
+  <div class="control-group">
+    <div class="control-title">Speed:</div>
+    <div class="button-row">
+      <button onclick="setSpeed(2)">Slow</button>
+      <button onclick="setSpeed(4)">Medium</button>
+      <button onclick="setSpeed(6)">Fast</button>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="control-title">Track Length:</div>
+    <div class="button-row">
+      <button onclick="setTrackLength('short')">Short</button>
+      <button onclick="setTrackLength('medium')">Medium</button>
+      <button onclick="setTrackLength('long')">Long</button>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <button onclick="toggleReverse()">Toggle Reverse</button>
+  </div>
+
+  <div class="control-group">
+    <button id="startBtn" onclick="startGame()">Start</button>
+  </div>
+</div>
+
+<!-- Game Canvas -->
+<canvas id="gameCanvas" width="480" height="640"></canvas>
+
+  <!-- GAME RESULT OVERLAY -->
+<div id="overlay">
+  <div id="overlayContent">
+    <h1 id="overlayTitle"></h1>
+    <p id="overlayMessage"></p>
+    <button onclick="hideOverlay()">Restart</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
