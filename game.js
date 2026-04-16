@@ -3,17 +3,17 @@ const ctx = canvas.getContext('2d');
 
 // Images
 
-const carImg = new Image(); carImg.src = '/img/car.png';
-const starImg = new Image(); starImg.src = '/img/star.png';
-const rockImg = new Image(); rockImg.src = '/img/rock.png';
-const drumImg = new Image(); drumImg.src = '/img/drum.png';
+const carImg = new Image(); carImg.src = 'img/car.png';
+const starImg = new Image(); starImg.src = 'img/star.png';
+const rockImg = new Image(); rockImg.src = 'img/rock.png';
+const drumImg = new Image(); drumImg.src = 'img/drum.png';
 
 // Audio
 
-const collectSound = new Audio('/sound/collect.mp3');
-const crashSound = new Audio('/sound/crash.mp3');
-const successSound = new Audio('/sound/success.wav');
-const startSound = new Audio('/sound/gamestart.mp3');
+const collectSound = new Audio('sound/collect.mp3');
+const crashSound = new Audio('sound/crash.mp3');
+const successSound = new Audio('sound/success.wav');
+const startSound = new Audio('sound/gamestart.mp3');
 
 // Car
 
